@@ -1,17 +1,20 @@
-# Viper OTA
+# Desi OTA
 ### Based on Lineage/CyanogenMod ota app
 
 ## How to use?
 - Add this to our vendor:
 ```
 # Essential OTA Config
+```bash
 PRODUCT_PACKAGES += \
     ViperOTA
 
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ota.build.date=$(shell date +%Y%m%d)
-
+```
 # Device specific
+```bash
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.ota.manifest=https://raw.githubusercontent.com/PureNexusProject-Mod/OTA_server/master/device_name.json
 ```
